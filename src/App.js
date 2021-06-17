@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
 	const [cart, setCart] = useState([]);
@@ -102,13 +103,13 @@ const App = () => {
 	);
 };
 
-const Home = () => (
-	<div>
-		<h1>Home Page</h1>
-		<Link className="nav-style" to="/shop">
-			<button className="btn home-btn">Shop Now</button>
-		</Link>
-	</div>
-);
+// const Home = () => (
+// 	<div className="home-page">
+// 		<h1>Home Page</h1>
+// 		<Link className="nav-style" to="/shop">
+// 			<button className="btn home-btn">Shop Now</button>
+// 		</Link>
+// 	</div>
+// );
 
 export default App;

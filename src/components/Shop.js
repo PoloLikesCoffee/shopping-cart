@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ShopItem from './shop/ShopItem';
 
 const Shop = ({ addToCart, capitalizeFirstLetter }) => {
-	const limitProducts = 31;
+	const limitProducts = 36;
 	const [products, setProducts] = useState([]);
 
 	useEffect(() => {

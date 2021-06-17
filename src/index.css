@@ -70,6 +70,7 @@ nav {
 }
 
 .nav-style {
+	font-size: 0.9rem;
 	color: var(--color-yellow);
 	text-decoration: none;
 }
@@ -86,12 +87,13 @@ nav {
 }
 
 .counter-cart {
+	font-size: 0.8rem;
 	color: var(--color-black);
 	background-color: var(--color-yellow);
 	position: relative;
 	display: block;
-	width: 24px;
-	height: 18px;
+	width: 22px;
+	height: 16px;
 	margin-left: 10px;
 	line-height: 18px;
 	text-align: center;
@@ -118,19 +120,6 @@ nav {
 	padding: 0;
 	color: var(--color-white);
 	font-size: 1rem;
-}
-
-.home-btn {
-	background-color: var(--color-black);
-	padding: 0.5rem;
-	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
-	border: 3px solid var(--color-beige);
-}
-
-.home-btn:hover {
-	background-color: var(--color-white);
-	color: var(--color-black);
-	border: 3px solid var(--color-gray);
 }
 
 .products-container {
@@ -354,5 +343,98 @@ nav {
 	color: var(--color-yellow);
 	background-color: var(--color-black);
 	padding: 0.5rem;
+	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
+}
+
+.order-summary-container button:hover {
+	color: var(--color-black);
+	background-color: var(--color-white);
+}
+
+/*homepage*/
+.home-page {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: 2rem auto;
+}
+
+.left {
+	display: flex;
+	height: 500px;
+	width: 500px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.left h1 {
+	font-size: 2rem;
+	margin-top: 2rem;
+	width: 400px;
+	filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2));
+}
+
+.home-btn {
+	background-color: var(--color-black);
+	padding: 1rem;
+	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
+}
+
+.home-btn:hover {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+.right img {
+	height: 100px;
+	width: 100px;
+	opacity: 0.5;
+	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
+}
+
+.right {
+	height: 450px;
+	width: 450px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
+}
+
+.right::before {
+	content: 'The next collection...';
+	width: 300px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-style: italic;
+	color: var(--color-black);
+	background-color: var(--color-white);
+	position: absolute;
+	top: 80px;
+	left: -10px;
+	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
+	z-index: 10;
+}
+
+.right::after {
+	content: '...Soon available!!!';
+	width: 300px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	font-style: italic;
+	color: var(--color-black);
+	background-color: var(--color-white);
+	position: absolute;
+	bottom: 90px;
+	right: -10px;
 	filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.2));
 }

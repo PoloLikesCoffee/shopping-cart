@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = ({ cartItemsQty }) => {
 	return (
 		<nav>
-			<h2>Shopping Cart</h2>
+			<h2>POKE MART - online shop</h2>
 			<ul className="nav-links">
 				<Link className="nav-style" to="/">
 					<li>Home</li>
