@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
 import Home from './components/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
 	const [cart, setCart] = useState([]);
@@ -73,7 +73,7 @@ const App = () => {
 	};
 
 	return (
-		<Router>
+		<Router basename="/">
 			<div className="App">
 				<Nav cartItemsQty={cartItemsQty} />
 				<Switch>
